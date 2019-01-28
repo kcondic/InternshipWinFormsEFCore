@@ -35,7 +35,7 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 ```
 12. Desni klik na Data projekt -> set as startup project. Ovo radimo da bi mogli napravit migracije, pošto WinForms i EF Core nisu baš kompatibilni, prebacujemo startup project na Data samo dok stvorimo migraciju i pokrenemo je.
 13. Otvorit view (na vrhu visual studia izbornik) -> other windows -> package manager console
-14. Unijet iduću naredbu koja stvara migraciju imena InitialCreate:
+14. Unijet iduću naredbu koja stvara migraciju imena InitialCreate (obavezno odabrat da je default project Data):
 ```csharp
 Add-Migration InitialCreate
 ```
